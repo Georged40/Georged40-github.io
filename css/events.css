@@ -1,0 +1,268 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    color: #E84451;
+
+
+  }
+
+
+ .main-container{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: repeat(12, minmax(75px, auto));
+    grid-template-columns: repeat(16, 1fr);
+
+ }
+
+ .mid-section{
+    grid-row: 3/-1;
+    grid-column:2/-2;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+ }
+
+ .latest-events{
+    background-color: whitesmoke;
+    grid-column: 1/5;
+    grid-row: 2/-2;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+
+  }
+
+  .latest-events img{
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-left: 50px;
+    }
+    .latest-events h1{
+        font-weight: bold;
+        text-align: center;
+    }
+
+  .carousel-wrap{
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 10px black;
+    display: flex;
+    grid-column: 6/-1;
+    grid-row: 1/-2;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .text-above-images{
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+    text-align: center;
+    font-weight:600;
+    margin-top: 100px;
+    padding: 100px;
+  }
+
+  .lower-area-detail{
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+    grid-column: 4/13;
+    grid-row: -2/-1;
+    text-align: center;
+    font-weight:600;
+
+  }
+  .header{
+    grid-row: 1/3;
+    grid-column:1/-1;
+    background-color: #98D6E4;
+    /* 98D6E4 */
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 20px;
+    height: 100px;
+  }
+
+  .logo{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+  }
+  button{
+    background-color: #98D6E4;
+    border: 1px solid #98d68e;
+    margin: 60px 5px 0;
+    padding: 10px;
+  }
+  /* Links */
+
+
+
+  a{
+    text-decoration: none;
+    color: #E84451;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+button a:hover{
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+  }
+  small{
+    font-weight: 400px;
+  }
+
+
+  /* Main */
+
+
+
+
+  /* Intro */
+
+
+
+
+
+
+
+  .socials img{
+    padding-top: 20px;
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .insta{
+    padding-right: 30px;
+  }
+  .socials a:hover{
+    cursor: pointer;
+
+
+  }
+  .socials{
+    display: flex;
+    justify-self: leaveSpace;
+    align-content: center;
+  }
+  .fineDetails{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 0;
+  }
+  .fineDetails a{
+    padding-right: 15px;
+  }
+  .contacts{
+    padding-right: 30px;
+  }
+
+
+  /* eVENTS STYLES */
+
+
+
+
+
+  /* Footer */
+
+
+  .footer{
+
+    background-color: #98D6E4;
+    display: flex;
+    grid-row: -1;
+    grid-column: 1/-1;
+    font-weight: 200;
+    font-size: 0.6em;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 30px;
+
+
+  }
+
+  /* carousel */
+
+
+  /*
+Styling the Carousel
+
+1) Set a max-width of 600px & position relative on the div 'carousel'
+2) Hide all 'carousel-item' divs
+3) Make sure all images inside 'carousel-item' have a max-width that matches the main
+'carousel' div
+4) All images within 'carousel-item' must be responsive, so think about setting a
+max-width on the images and how you'd make the image 100% width of 'carousel-item'
+5) We want the first 'carousel-item' to be visible, think about the class we added to the first item. Make sure that class is always shown
+6) The 'carousel-actions' needs to be on top of the slider, so think about positioning
+and how you can use relative/absolute positioning to put the 'carousel-actions' on top of
+the slider
+7) Make some beautiful buttons!
+8) Space those buttons from the left & right - we want to make sure they're not touching
+the edges of the slides, but adequately spaced
+*/
+
+.carousel{
+    border-radius: 5px;
+    border: 3px solid red;
+    box-shadow: 3px 3px 10px black;
+    width: 600px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    height: 500px;
+}
+
+.carousel .carousel-item {
+    display: none;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+}
+
+.carousel-item img {
+    width: 600px;
+    height:500px;
+}
+
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+    border-radius: 50px;
+    background-color: white;
+    background-color: #98D6E4;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+  
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;
+
+}
